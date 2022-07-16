@@ -1051,7 +1051,7 @@ function draw(){
   
     //coleta
     
-    if(mousePressedOver(lixo) && mouse === "nao"){
+    if(mousePressedOver(lixo) && poli.isTouching(lixos)){
       lixos.destroyEach();
       lixosQ++;
     }
