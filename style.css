@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+h1{
+  font-size: 90px;
+  color: rgb(66, 21, 11);
+  margin-bottom: 2px;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: rgb(66, 21, 11);
+  font-size: 23.3px;
+}
+
+h2{
+  color: antiquewhite;
+  margin-top: 50px;
+}
+
+.pre-carregamento{
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(129, 44, 25);
+  transition: 100s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.efeito-carregamento{
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 100%;
+  animation: efeito 0.5s infinite;
+}
+
+@keyframes efeito{
+  0%{
+    box-shadow: 0 0 0 0 white;
+  }
+  100%{
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+}
